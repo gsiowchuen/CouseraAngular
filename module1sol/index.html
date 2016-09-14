@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Hi there, welcome to Assignment 1 solution.</h1>
+    <h3>Check if your food intake for lunch is healthy or not here.</h3>
+    <div ng-controller='FoodController'>
+      Please enter the items you eat for lunch daily in the textbox provided below: <br/>
+      <strong>Example: </strong>If you have burger, fries, and coke for lunch, you should enter <i>"burger, fries, coke".</i><br/><br/>
+      Food intake: <input type="text" ng-model="foodArrayString"><button ng-click="checkFood()">Check If Too Much</button><br/>
+      {{checkResult}}
+    </div>
+  </body>
+</html>
