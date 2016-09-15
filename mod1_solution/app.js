@@ -1,10 +1,10 @@
 (function(){
 'use strict';
 angular.module('LunchCheck',[])
-.controller('FoodController',FoodController);
+.controller('LunchCheckController',LunchCheckController);
 
-FoodController.$inject = ['$scope'];
-function FoodController($scope){
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope){
 
    //this will be the function that handles the request from the form
    $scope.checkFood = function(){
